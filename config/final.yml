@@ -1,0 +1,6 @@
+---
+final_name: event_log
+blobstore:
+  provider: s3
+  options:
+    bucket_name: windows-syslog-blobs

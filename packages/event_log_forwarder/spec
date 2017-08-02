@@ -1,0 +1,8 @@
+---
+name: event_log_forwarder
+
+dependencies:
+- msbuild
+
+files:
+- EventLogForwarder/**/*

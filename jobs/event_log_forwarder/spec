@@ -1,0 +1,15 @@
+---
+name: event_log_forwarder
+
+templates: {}
+
+packages:
+- event_log_forwarder
+
+properties:
+  syslog.address:
+    description: IP or DNS address of the syslog server.
+    example: logs4.papertrail.com
+  syslog.port:
+    description: Port of the syslog server.
+    default: 514

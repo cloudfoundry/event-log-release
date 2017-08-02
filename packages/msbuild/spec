@@ -1,0 +1,7 @@
+---
+name: msbuild
+
+dependencies: []
+
+files:
+- msbuild/vs_buildtools__*.exe

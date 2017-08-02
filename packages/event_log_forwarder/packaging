@@ -1,0 +1,25 @@
+$ErrorActionPreference = "Stop";
+trap { $host.SetShouldExit(1) }
+
+$msbuild = "/var/vcap/packages/msbuild/MSBuild/15.0/Bin/MSBuild.exe"
+if ((Test-Path $msbuild) -eq $False) {
+   Write-Error "Missing $msbuild"
+}
+
+Copy-Item -Recurse -Force -Path "C:\var\vcap\packages\msbuild\Reference Assemblies" -Destination "C:\Program Files (x86)"
+
+$sln = (Get-Item "EventLogForwarder/*.sln").FullName
+Write-Log $sln
+
+$ArgList = "$sln /t:Rebuild /p:Configuration=Release"
+Write-Log $ArgList
+
+Start-Process -Wait -Passthru -NoNewWindow -FilePath "$msbuild" -ArgumentList $ArgList
+
+$release= "EventLogForwarder/EventLogForwarder/bin/Release"
+
+if ((Test-Path "$release/EventLogForwarder.exe") -eq $False) {
+  Write-Error "Unable to build EventLogForwarder"
+}
+
+Move-Item -Force -Path "$release/*" -Destination "$Env:BOSH_INSTALL_TARGET"

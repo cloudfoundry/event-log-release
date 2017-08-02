@@ -1,0 +1,15 @@
+$ErrorActionPreference = "Stop";
+trap { $host.SetShouldExit(1) }
+
+$src = (Get-Item msbuild/vs_buildtools__*.exe).FullName
+
+Write-Log $Env:BOSH_INSTALL_TARGET
+$InstallPath = "C:" + ($Env:BOSH_INSTALL_TARGET -replace "/","\")
+$Arglist = "--quiet --add Microsoft.VisualStudio.Workload.MSBuildTools --add Microsoft.Net.Component.4.6.1.SDK --add Microsoft.Net.Component.4.6.1.TargetingPack --installPath $InstallPath"
+
+Write-Log $Arglist
+Start-Process -Wait -Passthru -FilePath "$src" -ArgumentList $Arglist
+
+Copy-Item -Recurse -Force -Path "C:\Program Files (x86)\Reference Assemblies" -Destination "$Env:BOSH_INSTALL_TARGET\Reference Assemblies"
+
+Get-ChildItem $Env:BOSH_INSTALL_TARGET

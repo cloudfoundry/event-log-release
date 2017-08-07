@@ -8,8 +8,11 @@ packages:
 
 properties:
   syslog.address:
-    description: IP or DNS address of the syslog server.
+    description: "IP or DNS address of the syslog server."
     example: logs4.papertrail.com
   syslog.port:
-    description: Port of the syslog server.
+    description: "Port of the syslog server."
     default: 514
+  syslog.protocol:
+    description: "Network protocol to communicate with must be either 'tcp' or 'udp'."
+    default: 'udp'

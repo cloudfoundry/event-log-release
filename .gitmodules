@@ -1,3 +1,0 @@
-[submodule "src/EventLogForwarder"]
-	path = src/EventLogForwarder
-	url = https://github.com/pivotal-cf-experimental/EventLogForwarder.git

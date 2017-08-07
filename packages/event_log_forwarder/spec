@@ -1,8 +1,7 @@
 ---
 name: event_log_forwarder
 
-dependencies:
-- msbuild
+dependencies: []
 
 files:
-- EventLogForwarder/**/*
+- EventLogForwarder/EventLogForwarder*.zip

@@ -1,0 +1,19 @@
+name: event_log
+version: "0.1"
+commit_hash: 0e0ccc2
+uncommitted_changes: false
+jobs:
+- name: event_log_forwarder
+  version: 6520043661e769bbe7f013a729a7e3559cdc45f3
+  fingerprint: 6520043661e769bbe7f013a729a7e3559cdc45f3
+  sha1: 661c2c26cb6f385102f9647e95aedc15f31ed3a8
+packages:
+- name: event_log_forwarder
+  version: 3a28cf5a7f9663c704bb0dfafc77f6498a0d3e79
+  fingerprint: 3a28cf5a7f9663c704bb0dfafc77f6498a0d3e79
+  sha1: 1fb3934daa66971399d03f136c572673c4ddcfe2
+  dependencies: []
+license:
+  version: 63b33bb09df7de50cebcdf04797e176ff167f6f5
+  fingerprint: 63b33bb09df7de50cebcdf04797e176ff167f6f5
+  sha1: c5f2b182c510c3cd4a2d736225bda0683a88721e

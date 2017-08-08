@@ -1,3 +1,4 @@
+<% if p('syslog.enabled') %>
 {
   "processes": [
     {
@@ -7,3 +8,6 @@
     }
   ]
 }
+<% else %>
+{}
+<% end %>

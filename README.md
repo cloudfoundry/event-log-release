@@ -7,13 +7,13 @@ The Event Log Release provides a BOSH job for streaming Windows Event Logs to a 
 ```yaml
 ---
 releases:
-- name: event_log
+- name: event-log
   version: REPLACE_ME
 
 addons:
 - name: event-log-addon
   jobs:
-  - name: event_log_forwarder
+  - name: event-log-forwarder
     release: event_log
   include:
     stemcell:

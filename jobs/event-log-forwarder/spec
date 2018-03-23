@@ -1,10 +1,10 @@
 ---
-name: event_log_forwarder
+name: event-log-forwarder
 
 templates: {}
 
 packages:
-- event_log_forwarder
+- event-log-forwarder
 
 properties:
   syslog.enabled:

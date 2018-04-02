@@ -1,5 +1,5 @@
 ---
-name: event-log-forwarder
+name: event_log_forwarder
 
 dependencies: []
 

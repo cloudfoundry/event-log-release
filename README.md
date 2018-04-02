@@ -13,7 +13,7 @@ releases:
 addons:
 - name: event-log-addon
   jobs:
-  - name: event-log-forwarder
+  - name: event_log_forwarder
     release: event_log
   include:
     stemcell:

@@ -3,7 +3,7 @@
   "processes": [
     {
       "name": "event_log_forwarder",
-      "executable": "C:\\var\\vcap\\packages\\event-log-forwarder\\EventLogForwarder\\EventLogForwarder.exe",
+      "executable": "C:\\var\\vcap\\packages\\event_log_forwarder\\EventLogForwarder\\EventLogForwarder.exe",
       "args": ["<%= p('syslog.protocol') %>", "<%= p('syslog.address') %>", "<%= p('syslog.port') %>"]
     }
   ]

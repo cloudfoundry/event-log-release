@@ -14,7 +14,7 @@ addons:
 - name: event-log-addon
   jobs:
   - name: event_log_forwarder
-    release: event_log
+    release: event-log
   include:
     stemcell:
     - os: windows2012R2

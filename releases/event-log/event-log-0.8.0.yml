@@ -1,0 +1,19 @@
+name: event-log
+version: 0.8.0
+commit_hash: f7b43c6
+uncommitted_changes: false
+jobs:
+- name: event_log_forwarder
+  version: fab55ef2e507b18844507063bf1fe5a6d28103da104184024d5c94726d02f64f
+  fingerprint: fab55ef2e507b18844507063bf1fe5a6d28103da104184024d5c94726d02f64f
+  sha1: sha256:524a92c9f392c9fed5adab34084d3db916e9b8965a14878bfc8d77a34fe4b4f7
+packages:
+- name: event_log_forwarder
+  version: 0c3391b3cc15bf5b654199647555cc9673099e398a7388e26e0dbefd197df493
+  fingerprint: 0c3391b3cc15bf5b654199647555cc9673099e398a7388e26e0dbefd197df493
+  sha1: sha256:4ba86d3cb7f55b85a13162f7074291c68d1a745d753813d981dee2c2bff2a013
+  dependencies: []
+license:
+  version: a8d5082518f1e025e11bd4e6587cda8030102c2ed7495d4df31cea859cb29cd6
+  fingerprint: a8d5082518f1e025e11bd4e6587cda8030102c2ed7495d4df31cea859cb29cd6
+  sha1: sha256:1e96011e4e143ca64ac33c08247b15bf989248dab689f6b5e8372928dcd75172

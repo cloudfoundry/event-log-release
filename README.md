@@ -1,3 +1,5 @@
+DEPRECATED: please see https://github.com/cloudfoundry/windows-syslog-release for event log forwarding. 
+
 ## BOSH Event Log Release
 
 The Event Log Release provides a BOSH job for streaming Windows Event Logs to a syslog endpoint over TCP or UDP.
